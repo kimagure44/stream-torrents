@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          Playback your torrents and magnet links
+        </h1>
+        <p class="subtitle has-text-centered">
+          Very simple, only with the <b>.torrent</b> file or <b>magnet-link</b>
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-full has-text-centered">
+            <form enctype="multipart/form-data">
+              <div class="file has-name is-fullwidth">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="file" id="fileName" accept=".torrent">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Select file
+                    </span>
+                  </span>
+                  <span class="file-name"></span>
+                </label>
+                <input type="button" value="Subir" class="button is-primary" id="submitTorrent">
+              </div>
+              <div class="is-fullwidth">
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      Torrent information
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p id="urlViewTorrent"></p>
+                      <p id="infoTorrent"></p>
+                      <p id="pathTorrent"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="notification hide"></div>
+    <div class="overlay hidden">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="./_index.js"></script>
+  </body>
+</html>

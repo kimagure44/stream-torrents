@@ -1,0 +1,32 @@
+{
+  "name": "view-torrent",
+  "description": "Streaming torrent en Node.js",
+  "version": "1.0.0",
+  "author": "Iván Lara Gómez",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "buffer-from": "^1.0.0",
+    "bulma": "^0.7.5",
+    "clivas": "^0.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "inquirer": "^5.0.1",
+    "keypress": "^0.2.1",
+    "mime": "^2.2.0",
+    "network-address": "^1.1.0",
+    "numeral": "^2.0.6",
+    "open": "0.0.5",
+    "optimist": "^0.6.1",
+    "parse-torrent": "^5.4.0",
+    "pump": "^2.0.0",
+    "range-parser": "^1.0.0",
+    "rc": "^1.1.6",
+    "torrent-stream": "^1.0.1",
+    "winreg": "1.2.4",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
